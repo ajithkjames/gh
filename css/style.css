@@ -458,22 +458,22 @@ ul.callbacks_tabs.callbacks1_tabs {
  /*----*/
 .content-grid h3{
 	text-align:center;
-	color: #fff;
+	/*color: #fff;*/
   	font-size: 3em;
  	padding: 0 0 1.3em;
   	font-family: 'Montserrat-Regular';
 }
 .content-grid h3:after,.content-grid h3:before{
 	width: 200px;
-	height: 1px;
+	height: 4px;
 	display: inline-block;
 	vertical-align: middle;
 	content:"";
-	background:#fff;
+	background:#27DA93;
 	margin: 0 1%;
 }
 .content-grid{
-	background: url(../images/ajith/cover.png);
+	/*background: url(../images/ajith/cover.png);*/
 	width:100%;
 	min-height: 500px;
 	background-size: cover;
@@ -481,7 +481,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   	-moz-background-size: cover;
   	-o-background-size: cover;
 	 padding: 4em 0 5em;
-	   background-color: rgba(51, 51, 51, 0.84); 
+	   /*background-color: rgba(51, 51, 51, 0.84); */
   background-blend-mode: multiply;
 }
 .most-1 {
