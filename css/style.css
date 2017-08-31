@@ -1086,13 +1086,16 @@ transform: rotatey(360deg);
 }
 /*--buy--*/
 .banner-about {
-  background: url(../images/ajith/about.png) no-repeat;
-  width: 100%;
-  height: 250px;
+  background: url(../images/ajith/logo.jpg) no-repeat;
+    width: 59%;
+    height: 238px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .banner-about h3{
 	color: #fff;
@@ -5109,4 +5112,14 @@ i.glyphicon.glyphicon-menu-hamburger {
     -webkit-border-radius: 6px 0 6px 6px;
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
+}
+
+ul.nav a:hover { 
+	color: #fff !important;
+	background-color: #27DA93 !important;
+	border-radius: 15px;
+	 }
+
+.dropdown-submenu >a{
+	line-height: 25px !important;
 }
