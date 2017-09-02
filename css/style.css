@@ -5123,3 +5123,9 @@ ul.nav a:hover {
 .dropdown-submenu >a{
 	line-height: 25px !important;
 }
+#amenities li {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
