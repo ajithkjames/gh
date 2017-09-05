@@ -5129,3 +5129,20 @@ ul.nav a:hover {
     margin-bottom: 10px;
     font-weight: bold;
 }
+
+.floaty{
+	float:right; 
+	 top: 437px; 
+	 background-color:#27da93;
+	  width:40;height:60; padding:15px; 
+	  position: fixed; 
+	  border-radius:8px;
+	  border-radius: 8px;
+    z-index: 1000;
+}
+
+@media (max-width: 320px){
+	.floaty{
+		top: 300px;
+}
+}
