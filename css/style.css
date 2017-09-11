@@ -1087,7 +1087,7 @@ transform: rotatey(360deg);
 }
 /*--buy--*/
 .banner-about {
-  background: url(../images/ajith/logo.jpg) no-repeat;
+  
     width: 59%;
     height: 238px;
   background-size: cover;
@@ -3466,7 +3466,7 @@ p.para-in {
 }
 /*--contact--*/
 .contact {
-  padding: 3em 0 0;
+  padding: 4em 0 0;
 }
 .contact-top {
   padding: 1em 0 3em;
@@ -4046,7 +4046,7 @@ span.four {
 }
 /*--contact--*/
 .contact {
-  padding: 2em 0 0;
+  padding: 5em 0 0;
 }
 .map iframe {
   min-height: 200px;
@@ -5147,3 +5147,4 @@ ul.nav a:hover {
 		top: 300px;
 }
 }
+
