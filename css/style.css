@@ -5148,3 +5148,13 @@ ul.nav a:hover {
 }
 }
 
+@media (min-width: 720px){
+	.floaty{
+		display: none;
+}
+}
+
+.input-group[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+    }
