@@ -5062,9 +5062,12 @@ i.glyphicon.glyphicon-menu-hamburger {
     color: #555;
 }
 .header-right{
-	padding-top: 50px;
+	padding-top: 30px;
 }
 
+.buying-top{
+	padding-top: 30px;
+}
 
 
 .dropdown-submenu {
@@ -5142,6 +5145,16 @@ ul.nav a:hover {
     z-index: 1000;
 }
 
+.floatyy{
+	float:right; 
+	 top: 400px; 
+	 background-color:#27da93;
+	  width:40;height:60; padding:15px; 
+	  position: fixed; 
+	  border-radius:8px;
+	  border-radius: 8px;
+    z-index: 1000;
+}
 @media (max-width: 320px){
 	.floaty{
 		top: 300px;
@@ -5150,6 +5163,12 @@ ul.nav a:hover {
 
 @media (min-width: 720px){
 	.floaty{
+		display: none;
+}
+}
+
+@media (max-width: 720px){
+	.floatyy{
 		display: none;
 }
 }
