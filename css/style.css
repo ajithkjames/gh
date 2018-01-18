@@ -5177,3 +5177,13 @@ ul.nav a:hover {
     padding-right: 15px;
     padding-left: 15px;
     }
+
+.formcaptcha, #hiddenRecaptcha-error{
+
+	margin-left:164px!important;		
+}    
+
+form .error {
+  color: #ff0000;
+
+}

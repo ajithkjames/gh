@@ -14,6 +14,8 @@
 <meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 </head>
 <body>
 <div>
@@ -58,6 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Villas</a>
 		                            <ul class="dropdown-menu">
 		                                <li><a href="cybervalley.html">Cyber Valley</a></li>
+		                                <li><a href="cyberpark.html">Grand Cyber Park</a></li>
 		                            </ul>
 		                        </li>
 		                        <li class="divider"></li>
@@ -124,11 +127,14 @@ Kakkanad,eranakulam</p>
 		</div>
 		<div class="col-md-6 contact-right">
 	
-            <form form action="Mail-1.4.1/submit.php"  method="post">
+            <form form action="Mail-1.4.1/submit.php" name="commentform" method="post">
                <input type="text"  name="name" placeholder="Name" required="">
 			   <input type="text"  name="email" placeholder="Email" required="">
 			   <input type="text"  name="phone" placeholder="Phone Number" required="">
-			   <textarea  placeholder="Message"  name="message" requried=""></textarea>
+			   <textarea  placeholder="Message"  name="message" ></textarea>
+			   <div class="g-recaptcha" data-sitekey="6LcWmjsUAAAAAMpPyM_Lf4PaiY2vWcrgGz7WCeyq"></div>
+               <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+               <br>
 			   <label class="hvr-sweep-to-right">
 	           <input type="submit" name="grandhomes" value="Submit">
 	           </label>

@@ -7,6 +7,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 <link href="css/styles.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +15,7 @@
 <meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 
@@ -58,11 +59,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			            <h4 class="modal-title">Contact Form</h4>
 			        </div>
 			        <div class="modal-body">
-			          <form class="form-horizontal" name="commentform" form action="Mail-1.4.1/submit.php"  method="post">
+			          <form class="form-horizontal" name="commentform" form action="Mail-1.4.1/submit.php"   method="post">
 					    <div class="form-group">
 					        <label class="control-label col-md-4" for="first_name">Name</label>
 					        <div class="col-md-6">
-					        	<input type="text" class="form-control" name="name" placeholder="Name" required="">
+					        	<input type="text" class="form-control" id='name' name="name" placeholder="Name" required="">
 					        </div>
 					    </div>
 					    <div class="form-group">
@@ -74,8 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					    <div class="form-group">
 					        <label class="control-label col-md-4" for="email">Email Address</label>
 					        <div class="col-md-6 input-group">
-					        <span class="input-group-addon">@</span>
-					        	<input type="email" class="form-control" name="email" placeholder="Email" required="">
+					        	<input type="email" class="form-control" id='email' name="email" placeholder="Email" required="">
 					        </div>
 					    </div>
 					    <div class="form-group">
@@ -84,9 +84,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					        	<textarea ows="6" class="form-control" id="comments" placeholder="Message"  name="message" requried=""></textarea>
 					        </div>
 					    </div>
+                                            
+                                            <div class="g-recaptcha form-group formcaptcha" data-sitekey="6LcWmjsUAAAAAMpPyM_Lf4PaiY2vWcrgGz7WCeyq"></div>
+                                              <input type="hidden" class="form-group formcaptcha hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+                                            
+                                            
 					    <div class="form-group">
 					        <div class="col-md-6">
-					            <button type="submit" value="Submit" class="btn btn-custom pull-right">Send</button>
+					            <button type="submit" value="Submit" id="contact_id" class="btn btn-custom pull-right">Send</button>
 					        </div>
 					    </div>
 					</form>

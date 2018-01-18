@@ -9,7 +9,7 @@ $host = "ssl://smtp.gmail.com";
 $username = "grandhomesenquiry@gmail.com";
 $password = "grandhomes123456";
 $port = "465";
-$to = "ajith.kjames3@gmail.com";
+$to = "ajith.kjames3@gmail.com,sivajikuruppath@grandhomes.org,sales@grandhomes.org";
 $email_from = $_POST['email'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -27,7 +27,7 @@ else {
    die('no post data to process');
 }
 
-$headers = array ('From' => $email_from, 'To' => $to, 'Subject' => $email_subject, 'Reply-To' => $email_address);
+$headers = array ('From' => $email_from, 'To' => $to, 'Subject' => $email_subject, 'Reply-To' => $email_from);
 $smtp = Mail::factory('smtp', array ('host' => $host, 'port' => $port, 'auth' => true, 'username' => $username, 'password' => $password));
 $mail = $smtp->send($to, $headers, $data);
 
