@@ -128,18 +128,19 @@ Kakkanad,eranakulam</p>
 		</div>
 		<div class="col-md-6 contact-right">
 	
-            <form form action="Mail-1.4.1/submit.php" name="commentform" method="post">
+            <form id="gform" name="commentform" method="POST" data-email="sivajikuruppath@grandhomes.org,sales@grandhomes.org"
+				  action="https://script.google.com/macros/s/AKfycbyRNZrQn_K1T6DIp4u3xbPDd7XkXlotOVHqpdXi/exec">
                <input type="text"  name="name" placeholder="Name" required="">
 			   <input type="text"  name="email" placeholder="Email" required="">
 			   <input type="text"  name="phone" placeholder="Phone Number" required="">
 			   <textarea  placeholder="Message"  name="message" ></textarea>
-			   <div class="g-recaptcha" data-sitekey="6LcWmjsUAAAAAMpPyM_Lf4PaiY2vWcrgGz7WCeyq"></div>
-               <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
                <br>
 			   <label class="hvr-sweep-to-right">
-	           <input type="submit" name="grandhomes" value="Submit">
+	           <button type="submit" name="grandhomes" value="Submit" class="btn btn-custom pull-right">Send</button>
 	           </label>
 			</form>
+
+			
 		</div>
 		<div class="clearfix"> </div>
 </div>

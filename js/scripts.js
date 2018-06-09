@@ -80,7 +80,7 @@ function validEmail(email) { // see:
       } else {
         $('#myModal').modal('hide');
         alert("Thank you for contacting us.");
-        $('#myModal').find("input,textarea,select").val('').end();
+        $('#gform').find("input,textarea,select").val('').end();
         var url = event.target.action;  //
         var xhr = new XMLHttpRequest();
         xhr.open('POST', url);
